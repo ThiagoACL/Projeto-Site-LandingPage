@@ -10,7 +10,6 @@ header{
     display: flex;
     justify-content: center;
     background-color: black;
-    border: 1px solid white;
     width: auto;
     height: 12vh;
 }
@@ -134,7 +133,16 @@ footer{
     background-color: black;
     border: 1px solid white;
     width: auto;
-    height: 5vh;
+    height: 7vh;
+}
+
+footer > p > a{
+    text-decoration: none;
+    color: white;
+}
+
+footer > p > a:hover{
+    text-decoration: underline;
 }
 
 
