@@ -80,16 +80,27 @@ section > article > p{
     margin-bottom: 120px;
 }
 
-article > div#formulário{
+article > form{
     margin: auto;
     background-color: black;
-    height: 770px;
-    width:300px;
+    height: 690px;
+    width:310px;
     color: white;
     padding: 15px;
     border-radius: 10px;
     
 }
+
+article > form > fieldset{
+    border: none;
+    margin-bottom: 10px;
+}
+
+article > form > fieldset#field-radio{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 
 input{
     height: 30px;
@@ -103,8 +114,15 @@ input,label{
 }
 
 input.radio{
+    display: inline-block;
     height: auto;
     width: auto
+}
+
+label.labelradio{
+    margin-left: 1px;
+    display: inline-block;
+    font-size: 13px;
 }
 
 input#botao{
@@ -127,16 +145,17 @@ div#dados > p{
 }
 
 footer{
-    padding: 10px;
+    padding: 20px 10px 10px 10px;
     color: white;
     text-align: center;
     background-color: black;
     border: 1px solid white;
     width: auto;
-    height: 7vh;
+    height: 11vh;
 }
 
 footer > p > a{
+    line-height: 20px;
     text-decoration: none;
     color: white;
 }

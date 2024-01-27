@@ -21,34 +21,48 @@
                     Estou fazendo uma <strong style="color: black;">pesquisa</strong> para saber qual curso devo colocar em promoção no dia
                     23 de novembro na <strong style="color: black;">black friday!</strong> Ajude-me a escolher!
                 </p>
-                <div id="formulário">
-                    <div id="dados">
-                        <label for="">Preencha os campos abaixo:</label>
-                        <label for="">Nome*</label>
-                        <input type="text"/>
-                        <label for="">Email*</label>
-                        <input type="text"/>
-                        <label for="">Telefone</label>
-                        <input type="text"/>
+                <form action="" method="post" autocomplete="on">
+                        <fieldset>
+                            <p>Preencha os campos abaixo:</p><br>
+                            <label for="inome">Nome Completo*</label>
+                            <input type="text" name="nome" id="inome" autocomplete="on" required minlength="10" max="30"/>
+                            <label for="iemail">Email*</label>
+                            <input type="email" name="email" id="iemail" autocomplete="on" required minlength="10" max="30"/>
+                            <label for="itel">Telefone*</label>
+                            <input type="tel" name="tel" id="itel" autocomplete="on" required pattern="^[0-9]{4}-[0-9]{4}"/>
+                        </fieldset>
                         
-                        <label>Escolha um único curso:*</label>
-                        <input class="radio" type="radio" name="1"/> <label>Como modelar e confecionar saias</label>
-                        <input class="radio" type="radio" name="1"/><label>Acabamentos primorosos e técnicas de costuras</label>
-                        <input class="radio" type="radio" name="1"/><label>Introdução ao método de corte centesimal</label>
-                        <input class="radio" type="radio" name="1"/><label>Workshop de jogos americanos</label>
+                        <p>Escolha um único curso*</p>
+                        <fieldset id="field-radio">
+                            <p>
+                                <input class="radio" type="radio" name="1"/>
+                                <label class="labelradio" for="1">Workshop de jogos americanos</label>
+                            </p>
+                            <p>
+                                <input class="radio" type="radio" name="1"/>
+                                <label class="labelradio" for="1">Acabamentos primorosos e técnicas de costuras</label>
+                            </p>
+                            <p>
+                                <input class="radio" type="radio" name="1"/>
+                                <label class="labelradio" for="1">Introdução ao método de corte centesimal</label>
+                            </p>
+                            <p>
+                                <input class="radio" type="radio" name="1"/>
+                                <label class="labelradio" for="1">Workshop de jogos americanos</label>
+                            </p>
+                        </fieldset>
                         <label for="">10 + 5 = ?</label>
-                        <input type="text"/>
-                        <input id="botao" type="button" value="ESCOLHER ESTE CURSO"/>
+                        <input type="number" required/>
+                        <input id="botao" type="submit" value="ESCOLHER ESTE CURSO"/>
                         <p>Prometemos não utilizar suas informções de contato para enviar nenhum tipo de SPAM</p>
-                    </div>
-                </div>
+                </form>
             </article>
         </section>
     </main>
     <footer>
         <p>
             Feito com ❤️ para te ajudar a crescer: <strong style="color: rgb(255, 0, 200);">Algodão</strong> 
-            <strong style="color: white;">Cru</strong>
+            <strong style="color: white;">Cru</strong><br>
             
             Réplica de proposta de site criado por <a href="https://github.com/ThiagoACL" target="_blank">Thiago Almeida</a> para fins educacionais <br>
             Fonte: <a href="https://resultadosdigitais.com.br/marketing/exemplos-de-landing-pages/" target="_blank">Resultados Digitais</a>
